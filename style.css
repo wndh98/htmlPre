@@ -1,0 +1,45 @@
+/* 공용  */
+*{margin:0;padding:0;}
+/* 김주오 */
+#footer{
+    padding: 0 0 70px 0;
+    width: 100%;
+    margin: 0 auto;
+    background: #f5f5f5;
+    overflow: hidden;
+}
+.footer_margin{margin-top:100px;}
+.footer_inner{
+    max-width: 1760px;
+    width: 92%;
+    margin: 0 auto;
+    padding: 100px 0 70px;
+    color: #000;
+}
+.footer_left{
+    
+}
+
+
+
+/* 이보은 */
+
+h1{}/*tag*/
+#test1{}/*id*/
+.test2{}/*class*/
+h1 #test3{}/*h1 태그 안에있는 아이디가 test3인 녀석한테 css 적용*/
+/*<h1>
+    <div id="test3"></div> <<< 여기에 적용
+</h1>
+<div id="test3"></div> << 여기에는 적용 안됨*/
+
+
+
+/* 오우택 */
+
+
+
+
+
+
+
