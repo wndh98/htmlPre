@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    border: none;
+    vertical-align: top;
+
+    overflow-clip-margin: content-box;
+    overflow: clip;
+
+
+}
+
+#wrap {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    min-height: 550px;
+    overflow: hidden;
+}
+
+i {
+    font-style: italic;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    color: var(--font-color-base);
+}
+
+li {
+    list-style: none;
+}
+
+svg.icon {
+    display: block;
+}
