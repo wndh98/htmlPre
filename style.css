@@ -1,0 +1,9 @@
+*{margin:0px;padding:0px;}
+a{text-decoration: none;}
+#wrap{
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    min-height: 550px;
+    overflow: hidden;
+}
