@@ -1,61 +1,3 @@
-<<<<<<< HEAD
-* {
-    margin: 0;
-    padding: 0;
-}
-
-div {
-    display: block;
-    unicode-bidi: isolate;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    box-sizing: border-box;
-    border: none;
-    vertical-align: top;
-
-    overflow-clip-margin: content-box;
-    overflow: clip;
-
-
-}
-
-#wrap {
-=======
-<<<<<<< HEAD
-*{margin:0px;padding:0px;}
-a{text-decoration: none;}
-#wrap{
->>>>>>> 261b46762e034f66007241c27a0ffb5d948e2d82
-    position: relative;
-    width: 100%;
-    margin: 0 auto;
-    min-height: 550px;
-    overflow: hidden;
-}
-<<<<<<< HEAD
-
-i {
-    font-style: italic;
-}
-
-a {
-    text-decoration: none;
-    color: #000;
-    color: var(--font-color-base);
-}
-
-li {
-    list-style: none;
-}
-
-svg.icon {
-    display: block;
-}
-=======
-=======
 /* 공용  */
 *{margin:0;padding:0;}
 a{text-decoration: none;color: #000;color: var(--font-color-base);}
@@ -453,5 +395,3 @@ h1 #test3{}/*h1 태그 안에있는 아이디가 test3인 녀석한테 css 적�
 
 
 
->>>>>>> d45da72a61bb58088576bd6d915e4ad1f6baf311
->>>>>>> 261b46762e034f66007241c27a0ffb5d948e2d82
