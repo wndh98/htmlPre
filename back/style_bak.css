@@ -219,30 +219,30 @@ audio,canvas,img,svg,video {
 .footer_left{
     float: left;
 }
-.footer_logo{
+.footer_left .footer_logo{
     margin-bottom: 30px;
     font-size: 40px;
     display: flex;
 }
-.footer_logo img{
+.footer_left .footer_logo img{
     max-width: 220px;
     max-height: 55px;
 }
-.footer_logo a{
+.footer_left .footer_logo a{
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
-.footer_link{
+.footer_left .footer_link{
     margin-bottom: -16px;
     position: relative;
     z-index: 2;
 }
-.footer_link ul{
+.footer_left .footer_link ul{
     display: flex;
     flex-direction: column;
 }
-.footer_link ul li:first-child{
+.footer_left .footer_link ul li:first-child{
     background: none;
     padding: 0;
     margin: 0;
