@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 *{
     margin:0;
     padding:0;
@@ -6,86 +5,30 @@
     font-size:14px;
     letter-spacing: -0.2pt !important;
     font-family: "Montserrat", "Noto Sans KR", Arial, sans-serif !important;
-=======
-<<<<<<< HEAD
-* {
-    margin: 0;
-    padding: 0;
 }
-
-div {
-    display: block;
-    unicode-bidi: isolate;
+body {
+    min-width: 100%;
+    max-width: 1760px;
 }
-
 img {
     max-width: 100%;
     height: auto;
     box-sizing: border-box;
     border: none;
     vertical-align: top;
-
-    overflow-clip-margin: content-box;
     overflow: clip;
-
-
 }
-
 #wrap {
-=======
-<<<<<<< HEAD
-*{margin:0px;padding:0px;}
-a{text-decoration: none;}
-#wrap{
->>>>>>> 261b46762e034f66007241c27a0ffb5d948e2d82
     position: relative;
     width: 100%;
     margin: 0 auto;
     min-height: 550px;
     overflow: hidden;
 }
-<<<<<<< HEAD
-
-i {
-    font-style: italic;
-}
-
-a {
-    text-decoration: none;
-    color: #000;
-    color: var(--font-color-base);
-}
-
-li {
-    list-style: none;
-}
-
-svg.icon {
-    display: block;
-}
-=======
-=======
-/* 공용  */
-*{margin:0;padding:0;}
-a{text-decoration: none;color: #000;color: var(--font-color-base);}
-li{list-style: none;}
-svg.icon{display: block;}
-audio,canvas,img,svg,video {
-    max-width: 100%;
-    height: auto;
-    box-sizing: border-box;
->>>>>>> a60d4c3fbfe6e34b26163803f48df2fb0565fb6c
-}
-a{text-decoration: none;}
-#wrap{
-    position: relative;
-    width: 100%;
-    min-height: 550px;
-    overflow: hidden;
-}
-li{
-    list-style:none;
-}
+a {text-decoration: none;color: #000;color: var(--font-color-base);}
+li {list-style: none;}
+svg.icon {display: block;}
+audio,canvas,img,svg,video {max-width: 100%;height: auto;box-sizing: border-box;}
 .btnNormal{
     display: inline-block;
     box-sizing: border-box;
@@ -96,7 +39,6 @@ li{
     padding: 13px 22px;
     height: 40px;
     font-size: 12px;
-<<<<<<< HEAD
     font-weight: normal;
     vertical-align: middle;
     word-spacing: -0.5px;
@@ -104,55 +46,11 @@ li{
     text-align: center;
     white-space: nowrap;
 }
-=======
-    font-weight: 400;
-    color: #000;
-    letter-spacing: 0 !important;
-    line-height: 2;
-}
-.footer_right .footer_sns .sns_box{
-    display: flex;
-}
-.footer_right .footer_sns .sns_box a:first-child{
-    margin-left: 0;
-    padding: 0;
-}
-.footer_right .footer_sns .sns_box a{
-    margin-left: 10px;
-    font-size: 0;
-    display: block;
-    padding: 0 10px;
-}
-.footer_right .footer_sns .sns_box a svg{
-    height: 20px;
-}
-.footer_right .footer_sns .sns_box a path{
-    fill: #ababab;
-    -webkit-transition: all 0.3s;
-    transition: all 0.4s;
+#container{
+    width: 100%;
+    zoom: 1;
+    position: relative;
+    margin: 0 auto;
+    padding-top: 210px;
 }
 
-/* 이보은 */
-
-h1{}/*tag*/
-#test1{}/*id*/
-.test2{}/*class*/
-h1 #test3{}/*h1 태그 안에있는 아이디가 test3인 녀석한테 css 적용*/
-/*<h1>
-    <div id="test3"></div> <<< 여기에 적용
-</h1>
-<div id="test3"></div> << 여기에는 적용 안됨*/
-
-
-
-/* 오우택 */
-
-
-
-
-
-
-
->>>>>>> d45da72a61bb58088576bd6d915e4ad1f6baf311
->>>>>>> 261b46762e034f66007241c27a0ffb5d948e2d82
->>>>>>> a60d4c3fbfe6e34b26163803f48df2fb0565fb6c
