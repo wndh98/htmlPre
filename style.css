@@ -6,7 +6,11 @@
     letter-spacing: -0.2pt !important;
     font-family: "Montserrat", "Noto Sans KR", Arial, sans-serif !important;
 }
-audio,canvas,img,svg,video {
+body {
+    min-width: 100%;
+    max-width: 1760px;
+}
+img {
     max-width: 100%;
     height: auto;
     box-sizing: border-box;
@@ -14,22 +18,19 @@ audio,canvas,img,svg,video {
 img {
     border: none;
     vertical-align: top;
-    overflow-clip-margin: content-box;
     overflow: clip;
 }
-i {font-style: italic;}
-a {text-decoration: none;color: #000;color: var(--font-color-base);}
-li{list-style: none;}
-svg.icon{display: block;}
-button{border:none;background-color:transparent;}
-#wrap{
+#wrap {
     position: relative;
     width: 100%;
     margin: 0 auto;
     min-height: 550px;
     overflow: hidden;
 }
-
+a {text-decoration: none;color: #000;color: var(--font-color-base);}
+li {list-style: none;}
+svg.icon {display: block;}
+audio,canvas,img,svg,video {max-width: 100%;height: auto;box-sizing: border-box;}
 .btnNormal{
     display: inline-block;
     box-sizing: border-box;
@@ -47,3 +48,43 @@ button{border:none;background-color:transparent;}
     text-align: center;
     white-space: nowrap;
 }
+.btn_black{
+    flex-basis:230px;
+    height:70px;
+    padding:25px 0;
+    font-size:16px;
+    font-weight: 400;
+    min-width:80px;
+    background:#1a1a1a;
+    color:#fff;
+    box-sizing: border-box;
+    border:1px solid transparent;
+    cursor:pointer;
+}
+.btn_white{
+    height: 70px;
+    padding: 25px 0;
+    font-size: 16px;
+    font-weight: 400;
+    min-width: 80px;
+    border: 1px solid #D6D6D6;
+    box-sizing: border-box;
+    color: #000;
+    background-color: #fff;
+    cursor:pointer;
+}
+.btn_white:hover{
+    border: 1px solid #000;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+#container{
+    width: 100%;
+    zoom: 1;
+    position: relative;
+    margin: 0 auto;
+    padding-top: 210px;
+}
+

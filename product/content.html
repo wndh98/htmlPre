@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylehseet" href="../monstserrat.css">
+    <link rel="stylehseet" href="../nanum_gothic.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../footer.css">
+    <link rel="stylesheet" href="../footer_tab.css">
+    <link rel="stylesheet" href="product_content.css">
+</head>
+</head>
+<body>
+    <div id="wrap">
+        <header id="header"></header>
+        <aside id="aside"></aside>
+        <div id="container">
+            <div class="breadcrumbs">
+                <ul>
+                    <li><a href="#none">홈</a></li>
+                    <li><a href="#none">Woman</a></li>
+                    <li><a href="#none">Bottom</a></li>
+                    <li><a href="#none">Pants</a></li>
+                </ul>
+            </div>
+            <div class="product_item">
+                <div class="product_img">
+                    <div class="product_main_img">
+                        <div class="wish">
+                            <img src="../images/product/btn_wish_before.png">
+                        </div>
+                        <img src="../images/product/b30b39630c23c4875f9f10972842e634.png" alt="thumb">
+                    </div>
+                    <div class="product_sub_img">
+                        <ul class="product_img_list">
+                            <li><img src="../images/product/b30b39630c23c4875f9f10972842e634.png"></li>
+                            <li><img src="../images/product/b30b39630c23c4875f9f10972842e634.png"></li>
+                            <li><img src="../images/product/b30b39630c23c4875f9f10972842e634.png"></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="product_explain">
+                    <h1>상품명</h1>
+                    <div class="basic_info">
+                        <ul>
+                            <li><span>제목</span>설명</li>
+                            <li><span>제목</span>설명</li>
+                            <li><span>제목</span>설명</li>
+                            <li><span>제목</span>설명</li>
+                        </ul>
+                    </div>
+                    <div class="product_option">
+                        <div class="option_box">
+                            <div class="option_title">옵션명</div>
+                            <ul class="option_list">
+                                <li><button>옵션1</button></li>
+                                <li><button>옵션2</button></li>
+                                <li><button>옵션3</button></li>
+                            </ul>
+                        </div>
+                        <p>[필수] 옵션을 선택해 주세요.</p>
+                        <span>(최소주문수량1개 이상)</span>
+                    </div>
+
+                    <div class="product_select">
+                        <div class="product">
+                            <div class="text">
+                                <p>상품명</p>
+                                <span>-옵션</span>
+                            </div>
+                            <div class="count">
+                                <button class="btn_white minus">-</button>
+                                <input type="number" name="count">
+                                <button class="btn_white plus">+</button>
+                                <button class="delete"><img src="../images/product/ico_product_delete.svg"></button>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <p class="price">0원</p>
+                            <p class="point">(<img src="../images/product/ico_product_point.gif">0원)</p>
+                        </div>
+                    </div>
+
+                    <div class="product_price">
+                        <div class="price_text"><span>TOTAL</span>(QUANTITY)</div>
+                        <div class="price_info"><span id="price">0원</span><span id="count">(0개)</span></div>
+                    </div>
+                    <div class="product_button">
+                        <button class="btn_black">BUY IT NOW</button>
+                        <button class="btn_white">CART</button>
+                        <button class="btn_white">WISH LIST</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+
+        </footer>
+    </div>
+
+
+    <script>
+
+        $(function() {
+            $('[data-spzoom]').spzoom();
+        });
+    </script>
+</body>
+</html>
