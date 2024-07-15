@@ -86,3 +86,23 @@ input[type="number"]::-webkit-inner-spin-button{
     padding-top: 210px;
 }
 
+.breadcrumbs{
+    width:92%;
+    margin:auto;
+    max-width: 1440px !important;
+    height:48px;
+}
+.breadcrumbs ul{
+    display:flex;
+    float:right;
+    margin-bottom:30px;
+}
+.breadcrumbs ul li a{
+    font-size: 12px;
+    color: #7d7d7d;
+}
+.breadcrumbs ul li:not(:first-child):before{
+    content:"/";
+    margin: 0 4px 0 2px;
+    color: #7d7d7d;
+}
