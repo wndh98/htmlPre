@@ -1,0 +1,56 @@
+#container .login_container{
+    max-width: 400px;
+    margin: 0 auto;
+}
+#container .login_container .login_form{
+    display:flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top:40px;
+    gap:8px;
+}
+#container .login_container .login_form .btnBold{
+    margin-top:20px;
+}
+#container .login_container .member_search{
+    display:flex;
+    justify-content: center;
+    padding:30px;
+}
+#container .login_container .member_search a:first-child{
+    padding-right:10px;
+    border-right:1px solid #aaa;
+}
+#container .login_container .member_search a:last-child{
+    padding-left:10px;
+}
+#container .login_container .member_join{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #e3e3e3;
+    height: 232px;
+}
+#container .login_container .member_join strong{
+    font-size: 18px;
+    font-weight: 700;
+    color: #1a1a1a;
+}
+#container .login_container .member_join p{
+    text-align:center;
+    margin: 8px 0 23px 0;
+    font-size: 14px;
+    color: #8a8a8a;
+}
+#container .login_container .member_join .btnBold_w{
+    height:auto;
+
+}
+#container .login_container .member_search_option{
+display:flex;
+align-items: center;
+gap:10px;
+
+}
