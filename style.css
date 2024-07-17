@@ -47,6 +47,17 @@ video {
   height: auto;
   box-sizing: border-box;
 }
+
+button {
+    overflow: visible;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    cursor: pointer;
+    background: none;
+}
+
+
 .btnNormal {
   display: inline-block;
   box-sizing: border-box;
@@ -147,29 +158,6 @@ video {
 .b_btn_white:hover {
   border: 1px solid #000;
 }
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-}
-input[type="radio"]:checked {
-  background-image: url(/images/bg_radio_checked.png);
-  -webkit-transition: .2s ease-out;
-  transition: .2s ease-out;
-}
-input[type="radio"] {
-  position: relative;
-  opacity: 1;
-  width: 18px;
-  height: 18px;
-  cursor: pointer;
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  border: 0;
-  background: url(/images/bg_radio.png) no-repeat 0 0;
-  background-size: 18px 18px;
-  outline: 0;
-}
 #container {
   width: 100%;
   zoom: 1;
@@ -220,7 +208,55 @@ input[type="password"] {
   box-sizing: border-box;
   outline: 1px;
 }
-
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+input[type="radio"]:checked {
+  background-image: url(/images/bg_radio_checked.png);
+  -webkit-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
+}
+input[type="radio"] {
+  position: relative;
+  opacity: 1;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: 0;
+  background: url(/images/bg_radio.png) no-repeat 0 0;
+  background-size: 18px 18px;
+  outline: 0;
+  vertical-align: middle;
+}
+input[type="radio"] + label {
+  margin: 0 15px 0 10px;
+  vertical-align: middle;
+}
+input[type="checkbox"] {
+  position: relative;
+  opacity: 1;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #d9d9d9;
+  background: url(/images/checkbox_off.svg) no-repeat center;
+  transition: none;
+  outline: 0;
+  -webkit-appearance: none;
+  vertical-align: middle;
+}
+input[type="checkbox"]:checked {
+  background: url(/images/checkbox_on.svg) no-repeat center;
+  transition: none;
+  border: 1px solid #d9d9d9;
+}
+input[type="checkbox"] + label {
+  margin-left:10px;
+}
 .paging {
   width: 92%;
   margin-left: auto;

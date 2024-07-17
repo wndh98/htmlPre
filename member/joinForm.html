@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylehseet" href="../monstserrat.css">
+    <link rel="stylehseet" href="../nanum_gothic.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../footer.css">
+    <link rel="stylesheet" href="../footer_tab.css">
+    <link rel="stylesheet" href="member.css">
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header"></header>
+        <aside id="aside"></aside>
+        <div id="container">
+            <div class="breadcrumbs">
+                <ul>
+                    <li><a href="#none">홈</a></li>
+                    <li><a href="#none">회원가입</a></li>
+                </ul>
+            </div>
+            <div class="middle_container">
+                <div class="title_section">
+                    <h1>회원가입</h1>
+                    <ul class="step">
+                        <li class="selected">1. 약관동의</li>
+                        <li>2. 정보입력</li>
+                        <li>3. 가입완료</li>
+                    </ul>
+                </div>
+
+                <form>
+                    <div class="memberForm">
+                        <div class="memberTitle">
+                            <h3>회원인증</h3>
+                        </div>
+                        <table class="memberTable">
+                            <colgroup>
+                                <col style="width:190px;">
+                                <col style="width:auto;">
+                            </colgroup>
+                            <tr>
+                                <th><img src="/images/ico_required.svg"> 회원구분</th>
+                                <td>
+                                    <input type="radio">
+                                    <label>개인회원</label>
+                                    <input type="radio">
+                                    <label>사업자회원회원</label>
+                                </td>
+                            </tr>
+                        </table>
+                        <div class="memberTitle">
+                            <h3>기본정보</h3>
+                        </div>
+                        <table class="memberTable">
+                            <colgroup>
+                                <col style="width:190px;">
+                                <col style="width:auto;">
+                            </colgroup>
+                            <tr>
+                                <th><img src="/images/ico_required.svg"> 아이디</th>
+                                <td>
+                                    <input type="text">
+                                    <span>(영문소문자/숫자, 4~16자)</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><img src="/images/ico_required.svg"> 비밀번호</th>
+                                <td>
+                                    <input type="text">
+                                    <span>(영문 대소문자/숫자/특수문자 중 2가지 이상 조합, 10자~16자)</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><img src="/images/ico_required.svg"> 비밀번호 확인</th>
+                                <td>
+                                    <input type="text">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><img src="/images/ico_required.svg"> 이름</th>
+                                <td>
+                                    <input type="text">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>주소</th>
+                                <td>
+                                    <input type="text" style="width:30%"><button class="btn_white search_btn">주소검색</button>
+                                    <input type="text">
+                                    <input type="text">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>일반전화</th>
+                                <td>
+                                    <select name="" id="" style="width:30%">
+                                        <option>02</option>
+                                    </select> - 
+                                    <input type="text" style="width:30%"> - 
+                                    <input type="text" style="width:30%">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><img src="/images/ico_required.svg">휴대전화</th>
+                                <td>
+                                    <select name="" id="" style="width:30%">
+                                        <option>010</option>
+                                    </select> - 
+                                    <input type="text" style="width:30%"> - 
+                                    <input type="text" style="width:30%">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><img src="/images/ico_required.svg">이메일</th>
+                                <td>
+                                    <input type="text">
+                                </td>
+                            </tr>
+                        </table>
+                        <div class="memberTitle">
+                            <h3>추가정보 <span>(선택)</span></h3>
+                        </div>
+                        <table class="memberTable">
+                            <colgroup>
+                                <col style="width:190px;">
+                                <col style="width:auto;">
+                            </colgroup>
+                            <tr>
+                                <th>생년월일</th>
+                                <td>
+                                    <input type="text" style="width:25%">년
+                                    <input type="text" style="width:25%">월
+                                    <input type="text" style="width:25%">일
+                                    <br>
+                                    <input type="radio"><label>양력</label>
+                                    <input type="radio"><label>음력</label>
+                                    <span>** 생일쿠폰 발급에 필요한 정보 입니다 (3,000원 생일쿠폰)</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>추천인 아이디</th>
+                                <td>
+                                    <input type="text">
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                </form>
+                <div class="btn_menu">
+                    <a class="btnBold_w">취소</a>
+                    <a class="btnBold">가입하기</a>
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+
+        </footer>
+    </div>
+
+</body>
+
+</html>

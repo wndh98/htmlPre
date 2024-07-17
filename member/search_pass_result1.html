@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylehseet" href="../monstserrat.css">
+    <link rel="stylehseet" href="../nanum_gothic.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../footer.css">
+    <link rel="stylesheet" href="../footer_tab.css">
+    <link rel="stylesheet" href="member.css">
+</head>
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header"></header>
+        <aside id="aside"></aside>
+        <div id="container">
+            <div class="breadcrumbs">
+                <ul>
+                    <li><a href="#none">홈</a></li>
+                    <li><a href="#none">비밀번호 찾기</a></li>
+                </ul>
+            </div>
+            <div class="small_container">
+                <h1 class="title1">비밀번호 찾기</h1>
+                <div class="login_form">
+                    <span>임시 비밀번호</span>
+                    <div class="member_search_option">
+                        <input type="radio" name="radio1" id="radio1" value="1" checked>
+                        <label for="radio1">이메일</label>
+                    </div>
+                    <span>이메일</span>
+                    <strong>asdf@asdf.com</strong>
+                </div>
+                <div class="link_menu">
+                    <a class="btn_white">로그인</a>
+                    <a class="btn_black">비밀번호 찾기</a>
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+
+        </footer>
+    </div>
+    <script>
+        $("select").on("change", function () {
+            if ($(this).val() == 3) {
+                $("input[name=radio1]").each(function () {
+                    if ($(this).val() == "1") {
+                        $(this).prop("checked", "checked");
+                    }
+                });
+                $(".option1").css("display", "none");
+                $(".option2").css("display", "none");
+                $(".option3").css("display", "unset");
+                $(".type3").css("display", "unset");
+            } else {
+                $("#radio2").prop("checked", "checked");
+                $(".option1").css("display", "unset");
+                $(".option2").css("display", "none");
+                $(".option3").css("display", "none");
+                $(".type3").css("display", "none");
+            }
+        });
+        $("input[type=radio]").on("click", function () {
+            let value = $(this).val();
+            if (value == 1) {
+                $(".option1").css("display", "none");
+                $(".option2").css("display", "none");
+                $(".option3").css("display", "unset");
+            } else if (value == 2) {
+                $(".option1").css("display", "unset");
+                $(".option2").css("display", "none");
+                $(".option3").css("display", "none");
+            } else if (value == 3) {
+                $(".option1").css("display", "none");
+                $(".option2").css("display", "unset");
+                $(".option3").css("display", "none");
+            }
+        });
+    </script>
+</body>
+
+</html>
