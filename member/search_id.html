@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylehseet" href="../monstserrat.css">
+    <link rel="stylehseet" href="../nanum_gothic.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../footer.css">
+    <link rel="stylesheet" href="../footer_tab.css">
+    <link rel="stylesheet" href="member.css">
+</head>
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header"></header>
+        <aside id="aside"></aside>
+        <div id="container">
+            <div class="breadcrumbs">
+                <ul>
+                    <li><a href="#none">홈</a></li>
+                    <li><a href="#none">로그인</a></li>
+                </ul>
+            </div>
+            <div class="small_container">
+                <h1 class="title1">로그인</h1>
+                <h2 class="title2">가입하신 방법에 따라 아이디 찾기가 가능합니다.<br>
+                    법인사업자 회원 또는 외국인 회원의 경우 법인명과 법인번호 또는 이름과 등록번호를 입력해 주세요.</h1>
+                <form>
+                    <div class="login_form">
+                        <span>회원유형</span>
+                        <select name="select1">
+                            <option value="1">개인회원</option>
+                            <option value="2">개인사업자회원</option>
+                            <option value="3">법인 사업자회원</option>
+                        </select>
+                        <div class="member_search_option">
+                            <input type="radio" name="radio1" id="radio1" class="type3" value="1">
+                            <label for="radio1" class="type3">법인</label>
+                            <input type="radio" name="radio1" id="radio2" checked value="2">
+                            <label for="radio2">이메일</label>
+                            <input type="radio" name="radio1" id="radio3" value="3">
+                            <label for="radio3">휴대폰번호</label>
+                        </div>
+                        <span>이름</span>
+                        <input type="text" required>
+                        <span class="option1">이메일</span>
+                        <input type="text" required class="option1">
+                        <span class="option2">휴대폰 번호</span>
+                        <div class="option2">
+                            <input type="text" required style="width:31%">
+                            -<input type="text" required style="width:32%">
+                            -<input type="text" required style="width:32%">
+                        </div>
+                        <span class="option3">법인 번호</span>
+                        <div class="option3">
+                            <input type="text" required class="option3" style="width:48%">
+                            -<input type="text" required class="option3" style="width:48%">
+                        </div>
+                        <input type="submit" class="btnBold" value="확인">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <footer id="footer">
+
+        </footer>
+    </div>
+    <script>
+        $("select").on("change",function(){
+            if($(this).val()==3){
+                $("input[name=radio1]").each(function(){
+                    if($(this).val()=="1"){
+                        $(this).prop("checked","checked");
+                    }
+                });
+                $(".option1").css("display","none");
+                $(".option2").css("display","none");
+                $(".option3").css("display","unset");
+                $(".type3").css("display","unset");
+            }else{
+                $("#radio2").prop("checked","checked");
+                $(".option1").css("display","unset");
+                $(".option2").css("display","none");
+                $(".option3").css("display","none");
+                $(".type3").css("display","none");
+            }
+        });
+        $("input[type=radio]").on("click",function(){
+            let value=$(this).val();
+            if(value==1){
+                $(".option1").css("display","none");
+                $(".option2").css("display","none");
+                $(".option3").css("display","unset");
+            }else if(value==2){
+                $(".option1").css("display","unset");
+                $(".option2").css("display","none");
+                $(".option3").css("display","none");
+            }else if(value==3){
+                $(".option1").css("display","none");
+                $(".option2").css("display","unset");
+                $(".option3").css("display","none");
+            }
+        });
+    </script>
+</body>
+
+</html>
