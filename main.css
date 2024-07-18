@@ -84,14 +84,7 @@
 }
 
 
-#container {
-    padding-top: 210px;
-    width: 100%;
-    zoom: 1;
-    position: relative;
-    margin: 0 auto;
-    max-width:1440px;
-}
+
 
 #container #contents {
     margin: 0 auto;

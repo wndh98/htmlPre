@@ -59,11 +59,33 @@ button {
 
 
 .btnNormal {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   box-sizing: border-box;
   line-height: 1;
   background-color: #000;
   color: #fff;
+  border: 1px solid #000;
+  padding: 13px 22px;
+  height: 40px;
+  font-size: 12px;
+  font-weight: normal;
+  vertical-align: middle;
+  word-spacing: -0.5px;
+  letter-spacing: 0;
+  text-align: center;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.btnNormal_w {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  line-height: 1;
+  background-color: #fff;
+  color: #000;
   border: 1px solid #000;
   padding: 13px 22px;
   height: 40px;
@@ -86,7 +108,9 @@ button {
   font-weight: bold;
   background: #1a1a1a;
   color: #fff;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 1px solid transparent;
   vertical-align: middle;
   word-spacing: -0.5px;
@@ -104,7 +128,9 @@ button {
   font-weight: bold;
   background: #fff;
   color: #000;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 1px solid transparent;
   vertical-align: middle;
   word-spacing: -0.5px;
@@ -158,14 +184,15 @@ button {
 .b_btn_white:hover {
   border: 1px solid #000;
 }
+
 #container {
+  padding-top: 210px;
   width: 100%;
   zoom: 1;
   position: relative;
   margin: 0 auto;
-  padding-top: 210px;
+  max-width:1440px;
 }
-
 .breadcrumbs {
   width: 92%;
   margin: auto;
@@ -257,6 +284,57 @@ input[type="checkbox"]:checked {
 input[type="checkbox"] + label {
   margin-left:10px;
 }
+
+/* ***************************tabMenu************************************************** */
+#container .section_menu ul{
+  display:flex;
+  border-bottom: 1px solid #000;
+}
+#container .section_menu ul li{
+  width:20%;
+  box-sizing: border-box;
+  position:relative;
+}
+#container .section_menu ul li a{
+  display: block;
+  height: 60px;
+  color: #9a9a9a;
+  font-size: 14px;
+  line-height: 60px;
+  text-align: center;
+}
+#container .section_menu ul li a span{
+  color: #9a9a9a;
+  font-size: 14px;
+}
+#container .section_menu ul li.on{
+  width:25%;
+  border-top: 1px solid #000;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+  border-bottom: none;
+  box-sizing: border-box;
+}
+#container .section_menu ul li.on::after{
+  content: "";
+  height: 2px;
+  position: absolute;
+  bottom: -1px;
+  width: 100%;
+  background-color: #fff;
+}
+
+#container .section_menu ul li.on a{
+  display: block;
+  height: 60px;
+  color: #000;
+  font-size: 14px;
+  line-height: 60px;
+  text-align: center;
+}
+
+/* ***************************tabMenu************************************************** */
+/* ***************************paging************************************************** */
 .paging {
   width: 92%;
   margin-left: auto;
@@ -312,7 +390,7 @@ input[type="checkbox"] + label {
   background: #fff;
   box-sizing: border-box;
 }
-
+/* ***************************paging end************************************************** */
 /*****************************************board*****************************************/
 #container .board_container {
   width: 92%;
