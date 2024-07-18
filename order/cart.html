@@ -48,7 +48,7 @@
                             </ul>
                         </div>
                         <h3>장바구니 상품</h3>
-                        <div class="cartInner" >
+                        <div class="cartInner">
                             <div class="cartList">
                                 <h4>일반상품(2)</h4>
                                 <div class="cartContent">
@@ -93,35 +93,53 @@
                                     <a class="delete_btn"></a>
                                 </div>
                             </div>
-
-                            <div class="cart_sticky">
-                                <div class="price_info">
-                                    <ul>
-                                        <li><strong>총 상품금액</strong><span>186,000원</span></li>
-                                        <li><strong>총 배송비</strong><span>0원</span></li>
-                                        <li><strong>총 할인금액</strong><span>8,000원</span></li>
-                                        <li><strong>기간할인</strong><span>8,000원</span></li>
-                                    </ul>
-                                    <div class="total_price">
-                                        <strong>결제예정금액</strong><strong>178,000<i>원</i></strong>
+                            <div class="cart_total_info">
+                                <div id="sticky">
+                                    <div class="cart_sticky">
+                                        <div class="price_info">
+                                            <ul>
+                                                <li><strong>총 상품금액</strong><span>186,000원</span></li>
+                                                <li><strong>총 배송비</strong><span>0원</span></li>
+                                                <li><strong>총 할인금액</strong><span>8,000원</span></li>
+                                                <li><strong>기간할인</strong><span>8,000원</span></li>
+                                            </ul>
+                                            <div class="total_price">
+                                                <strong>결제예정금액</strong><strong>178,000<i>원</i></strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="btn_menu">
+                                        <button class="btnBold">전체주문상품</button>
+                                        <button class="btnBold_w">선택주문상품</button>
                                     </div>
                                 </div>
-                                <div class="btn_menu">
-                                    <buton class="btnBold">전체주문상품</buton>
-                                    <buton class="btnBold_w">선택주문상품</buton>
-                                </div>
-
                             </div>
+                        </div>
+                        <div class="select_btn">
+                            <button class="btnNormal_w">전체선택</button>
+                            <button class="btnNormal_w">선택삭제</button>
                         </div>
 
                     </div>
                 </form>
             </div>
         </div>
-        <footer id="footer" >
+        <footer id="footer">
 
         </footer>
     </div>
+    <script>
+        $(function () {
+            $(window).on("scroll", function (e) {
+                console.log($(window).scrollTop());
+                console.log($(".cart_total_info").position());
+                if ($(window).scrollTop() > 650) {
+                    $("#sticky").css("top", $(window).scrollTop() - $(".cart_total_info").position().top + 30 + "px")
+                }
+            })
+
+        });
+    </script>
 </body>
 
 </html>
