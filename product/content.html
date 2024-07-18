@@ -70,9 +70,9 @@
                             <div class="option_box">
                                 <div class="option_title">옵션명</div>
                                 <ul class="option_list">
-                                    <li><button value="옵션1" price="10000">옵션1</button></li>
-                                    <li><button value="옵션2" price="20000">옵션2</button></li>
-                                    <li><button value="옵션3" price="30000"> 옵션3</button></li>
+                                    <li><button type="button" value="옵션1" price="10000">옵션1</button></li>
+                                    <li><button type="button" value="옵션2" price="20000">옵션2</button></li>
+                                    <li><button type="button" value="옵션3" price="30000"> 옵션3</button></li>
                                 </ul>
                             </div>
                             <p>[필수] 옵션을 선택해 주세요.</p>
@@ -86,11 +86,13 @@
                                     <p>상품명</p>
                                     <span>-옵션</span>
                                 </div>
-                                <div class="count">
-                                    <button class="btn_white minus">-</button>
-                                    <input type="number" name="pi_count">
-                                    <button class="btn_white plus">+</button>
-                                    <button class="delete"><img src="../images/product/ico_product_delete.svg"></button>
+                                <div class="count_btn">
+                                    <button type="button" class="btnNormal_w increase">-</button>
+                                    <input type="number" name="pi_count" class="increase_input">
+                                    <button type="button" class="btnNormal_w increase">+</button>
+                                    <button type="button" class="delete">
+                                        <img src="../images/product/ico_product_delete.svg">
+                                    </button>
                                 </div>
                             </div>
                             <div class="info">

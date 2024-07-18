@@ -49,10 +49,31 @@
                             <tr>
                                 <th><img src="/images/ico_required.svg"> 회원구분</th>
                                 <td>
-                                    <input type="radio">
+                                    <input type="radio" name="radio1" value="1" checked>
                                     <label>개인회원</label>
-                                    <input type="radio">
+                                    <input type="radio" name="radio1" value="2">
                                     <label>사업자회원회원</label>
+                                </td>
+                            </tr>
+                            <tr class="type2 type3">
+                                <th><img src="/images/ico_required.svg"> 사업자구분</th>
+                                <td>
+                                    <input type="radio" name="radio2" value="2" checked>
+                                    <label>개인사업자</label>
+                                    <input type="radio" name="radio2" value="3">
+                                    <label>법인사업자</label>
+                                </td>
+                            </tr>
+                            <tr class="type3">
+                                <th><img src="/images/ico_required.svg"> 회원인증</th>
+                                <td>
+                                    법인명<br>
+                                    <input type="text" style="margin-top:5px;"><br>
+                                    법인번호<br>
+                                    <input type="text" style="margin-top:5px;width:30%"> - 
+                                    <input type="text" style="margin-top:5px;width:30%">
+                                    <button class="btn_white search_btn">중복확인</button>
+                                    
                                 </td>
                             </tr>
                         </table>
@@ -84,8 +105,20 @@
                                     <input type="text">
                                 </td>
                             </tr>
-                            <tr>
+                            <tr class="type1">
                                 <th><img src="/images/ico_required.svg"> 이름</th>
+                                <td>
+                                    <input type="text">
+                                </td>
+                            </tr>
+                            <tr class="type2">
+                                <th><img src="/images/ico_required.svg"> 상호명</th>
+                                <td>
+                                    <input type="text">
+                                </td>
+                            </tr>
+                            <tr class="type2 type3">
+                                <th><img src="/images/ico_required.svg"> 사업자번호</th>
                                 <td>
                                     <input type="text">
                                 </td>
@@ -93,7 +126,8 @@
                             <tr>
                                 <th>주소</th>
                                 <td>
-                                    <input type="text" style="width:30%"><button class="btn_white search_btn">주소검색</button>
+                                    <input type="text" style="width:30%">
+                                    <button type="button" class="btn_white search_btn" onclick="sample2_execDaumPostcode()">주소검색</button>
                                     <input type="text">
                                     <input type="text">
                                 </td>
@@ -165,7 +199,42 @@
 
         </footer>
     </div>
+    <div id="layer" style="display:none;position:fixed;overflow:hidden;z-index:1;-webkit-overflow-scrolling:touch;">
+        <img src="//t1.daumcdn.net/postcode/resource/images/close.png" id="btnCloseLayer" style="cursor:pointer;position:absolute;right:-3px;top:-3px;z-index:1" onclick="closeDaumPostcode()" alt="닫기 버튼">
+        </div>
+<script>
+    $(function(){
+        let radio1 = $("input[name=radio1]");
+        let radio2 = $("input[name=radio2]");
+        radio1.on("change",function(){
+            if($(this).val()==1){
+                $(".type1").css("display","table-row");
+                $(".type3").css("display","none");
+                $(".type2").css("display","none");
+                $(radio2[0]).prop("checked",true);
+            }else{
+                $(".type1").css("display","table-row");
+                $(".type3").css("display","none");
+                $(".type2").css("display","table-row");
+            }
+        });
+        radio2.on("change",function(){
+            if($(this).val()==2){
+                $(".type1").css("display","table-row");
+                $(".type3").css("display","none");
+                $(".type2").css("display","table-row");
+            }else{
+                $(".type1").css("display","none");
+                $(".type2").css("display","none");
+                $(".type3").css("display","table-row");
+            }
+        });
+    })
 
+
+</script>
+<script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+<script src="/script/daumMap.js"></script>
 </body>
 
 </html>
