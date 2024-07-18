@@ -1,0 +1,71 @@
+#container .board_container .title2 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 40px;
+    font-size: 14px;
+    color: #6d6d6d;
+}
+
+#container .board_container .board_content {
+    border-top: none !important;
+    margin-top: 0px !important;
+}
+
+.product {
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid #e5e5e5;
+}
+
+.product {
+    display: table;
+    table-layout: fixed;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 10px solid #f6f6f6;
+}
+
+.product .thumbnail,
+.product .information {
+    display: table-cell;
+    vertical-align: top;
+    position: relative;
+}
+
+.product .thumbnail {
+    width: 85px;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    color: var(--font-color-base);
+}
+
+img {
+    -webkit-perspective: 1;
+}
+
+.product .thumbnail img {
+    max-width: 65px;
+}
+
+.attach {
+    position: relative;
+    padding: 20px 0;
+    margin: 0 20px;
+    text-align: right;
+}
+
+.attach a {
+    padding: 0 0 0 12px;
+    color: #6d6d6d;
+}
+
+.attach a:first-child {
+    padding-left: 20px;
+    background: url(//img.echosting.cafe24.com/skin/skin/board/icon-file.svg) no-repeat 0 0;
+    background-size: 14px auto;
+}

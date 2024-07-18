@@ -83,14 +83,22 @@
     }
 }
 
+/* @media (min-width: 1024px) {
+    #contents>.section {
+        max-width: 1230px;
+        width: 92%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+} */
 
-#container {
+/* #container {
     padding-top: 210px;
     width: 100%;
     zoom: 1;
     position: relative;
     margin: 0 auto;
-}
+} */
 
 #container #contents {
     margin: 0 auto;
@@ -107,14 +115,14 @@
     max-width: 1440px !important;
 }
 
-@media (min-width: 1024px) {
+/* @media (min-width: 1024px) {
     #contents>.section {
         max-width: 1230px;
         width: 92%;
         margin-left: auto;
         margin-right: auto;
     }
-}
+} */
 
 section.main_text.main_top_text {
     font-family: 'Giants', sans-serif !important;
