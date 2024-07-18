@@ -1,0 +1,31 @@
+#container .large_container .title_section {
+  margin-bottom: 50px;
+}
+#container .large_container .title_section h1 {
+  font-weight: 700;
+  font-size: 30px;
+  color: #000;
+  margin: 55px 0 40px;
+  text-align: center;
+}
+#container .large_container .title_section .step {
+  display: flex;
+  justify-content: center;
+}
+#container .large_container .title_section .step li {
+  color: #8a8a8a;
+  font-size: 17px;
+}
+#container .large_container .title_section .step li:not(:last-child):after {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  vertical-align: middle;
+  border-left: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+  -webkit-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+  margin: -2px 30px 0;
+}
+

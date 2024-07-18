@@ -83,22 +83,8 @@
     }
 }
 
-/* @media (min-width: 1024px) {
-    #contents>.section {
-        max-width: 1230px;
-        width: 92%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-} */
 
-/* #container {
-    padding-top: 210px;
-    width: 100%;
-    zoom: 1;
-    position: relative;
-    margin: 0 auto;
-} */
+
 
 #container #contents {
     margin: 0 auto;
@@ -115,14 +101,14 @@
     max-width: 1440px !important;
 }
 
-/* @media (min-width: 1024px) {
+@media (min-width: 1024px) {
     #contents>.section {
         max-width: 1230px;
         width: 92%;
         margin-left: auto;
         margin-right: auto;
     }
-} */
+}
 
 section.main_text.main_top_text {
     font-family: 'Giants', sans-serif !important;
@@ -602,7 +588,6 @@ img {
     padding: 0 0 2px 0;
     margin-top: 30px;
     border-bottom: 1px solid #3a3a3a;
-    font-family: 'Giants', sans-serif !important;
     font-weight: 400;
     letter-spacing: 0 !important;
 }
@@ -646,39 +631,6 @@ img {
     margin: 0 25px;
 }
 
-body,
-code,
-input,
-select,
-textarea,
-button {
-    font-family: "Montserrat", "Noto Sans KR", Arial, sans-serif !important;
-    letter-spacing: -0.2pt !important;
-}
-
-button {
-    font-family: Arial, "Apple SD Gothic Neo", "Noto Sans Regular", "맑은 고딕", "malgun gothic", "돋움", "dotum", sans-serif;
-    overflow: visible;
-    padding: 0;
-    margin: 0;
-    border: 0;
-    cursor: pointer;
-    background: none;
-}
-
-button {
-    border: 0;
-    outline: none;
-}
-
-input,
-select,
-textarea,
-body,
-code,
-button {
-    font-family: "Montserrat", "Noto Sans KR", Arial, sans-serif;
-}
 
 .main_product_category .main_product_tab li .button {
     font-size: 18px;

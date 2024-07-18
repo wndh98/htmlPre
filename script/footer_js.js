@@ -5,7 +5,6 @@ $(window).on("scroll",function(e){
         $(".top_box").css("display","block");
     }else{
         $(".top_box").css("display","none");
-        
     }
     if(lastScroll >currentScroll){
         
