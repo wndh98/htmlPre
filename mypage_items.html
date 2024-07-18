@@ -6,15 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="my.css" />
+    <link rel="stylesheet" href="my_items.css" />
 </head>
 
 <body>
-    <div class="wrap">
-        <div class="container">
+    <div id="wrap">
+        <div id="container">
             <div class="contents"><!-- 본체 부분 -->
-
+                <div class="breadcrumbs">
+                    <ul>
+                        <li><a href="#none">홈</a></li>
+                        <li><a href="#none">마이쇼핑</a></li>
+                        <li><a href="#none">나의 위시리스트</a></li>
+                    </ul>
+                </div>
                 <!-- 홈/마이쇼핑 -->
+                <!--
                 <div class="section_titleArea">
                     <span></span>
                     <ol>
@@ -28,6 +35,7 @@
                     </ol>
 
                 </div>
+                -->
                 <div class="section benefit">
 
                 </div>
@@ -36,7 +44,41 @@
                         <h2>나의 위시리스트</h2>
                     </div>
                     <div class="myshop_wishlist">
-                        <p class="empty">
+                        <div class="conbox">
+                            <div class="conbox2">
+                                <!-- 여기까지 위시리스트 -->
+                                <!-- 추가 -->
+                                <div class="prdBox">
+                                    <span class="check">
+                                        <input type="checkbox">
+                                    </span>
+                                    <div class="imagebox">
+                                        <img src="/html/images/product/b30b39630c23c4875f9f10972842e634.png" alt="">
+                                    </div>
+                                    <div class="description">Ribbon underpants mini skirt (black)
+                                        <ul>
+                                            <li>
+                                                26,000원
+                                            </li>
+                                            <li>
+                                                26000
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="buttonArea">
+                                        <span class="Right">
+                                            <button type="button" onclick="NewWishlist.actionOrder('basket', 0)"
+                                                class="btnNormal sizeS ">장바구니</button>
+                                            <button type="button" onclick="NewWishlist.actionOrder('order', 0)"
+                                                class="btnSubmit sizeS ">주문하기</button>
+                                        </span>
+                                    </div>
+                                    <a href="#none" class="btnDelete btn_wishlist_del" rel="112||000A||">삭제</a>
+                                </div>
+                               
+                            </div>
+                        </div>
+                        <p class="empty" style="display: none;">
                             <svg xmlns="http://www.w3.org/2000/svg" width="65" height="64" fill="none"
                                 viewBox="0 0 65 64" class="icon" role="img">
                                 <path
@@ -51,9 +93,46 @@
                             관심상품 내역이 없습니다
                         </p>
                     </div>
-                    <div class="order">
 
+                    <!-- 하단 버튼 -->
+                    <div class="delete_order">
+                        <div class="base_button">
+                            <span class="Right">
+                                <a href="#none" class="btnNormal sizeS" onclick="NewWishlist.deleteAll();">전체삭제</a>
+                                <a href="#none" class="btnNormal sizeS" onclick="NewWishlist.deleteSelect();">선택삭제</a>
+                            </span>
+                        </div>
+                        <div class="base_button bottom">
+                            <a href="#none" class="btnSubmitFix sizeM" onclick="NewWishlist.orderAll();">전체상품주문</a>
+                        </div>
                     </div>
+
+                    <!--
+                    <div class="listbox">
+                        <a href="#none" class="first">첫 페이지</a>
+                        <a href="#none">이전 페이지</a>
+                        <ol>
+                            <li class="xans-record-"><a href="?page=1" class="this">1</a></li>
+                        </ol>
+                        <a href="#none">다음 페이지</a>
+                        <a href="#none" class="last">마지막 페이지</a>
+                    </div>
+-->
+
+                    <div class="paging">
+                        <a class="prev_btn"></a>
+                        <ul class="page_list">
+                            <li><a class="on" href="#none">1</a></li>
+                            <li><a href="#none">2</a></li>
+                            <li><a href="#none">3</a></li>
+                            <li><a href="#none">4</a></li>
+                        </ul>
+                        <a class="next_btn"></a>
+                    </div>
+
+
+
+
                     <div class="myshopMain">
                         <div class="subTitle">
                             <h3>나의 쇼핑 정보</h3>
@@ -111,13 +190,8 @@
                         </div>
                     </div>
                 </div>
-
-
             </div>
-
         </div>
-
-
     </div>
 
 

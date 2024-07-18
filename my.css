@@ -7,7 +7,8 @@
     position: relative;
 }
 
-div.section_titleArea {
+/* 홈/마이쇼핑 */
+.section_titleArea {
     width: 92%;
     margin-left: auto;
     margin-right: auto;
@@ -16,14 +17,28 @@ div.section_titleArea {
     overflow: hidden;
     height: 30px;
     line-height: 30px;
+    max-width: 1440px !important;
 }
 
-.myshopArea>.titleArea_mywish {
-    margin: 50px 0 20px;
-    text-align: left;
-
+.section_titleArea>ol {
+    display: flex;
+    float: right;
+}
+.section_titleArea li:first-child {
+    background: none;
 }
 
+.section_titleArea li:not(:first-child):before {
+    content: "/";
+    display: inline-block;
+    margin: 0 4px 0 2px;
+    color: #7d7d7d;
+    vertical-align: top;
+}
+
+
+
+/* 왼쪽 메뉴 */
 .myshopArea>.myshopMain {
     position: absolute;
     left: 0;
@@ -37,6 +52,7 @@ div.section_titleArea {
     font-size: 18px;
     font-weight: normal;
     font-weight: bold;
+    
 }
 
 
@@ -52,6 +68,13 @@ div.section_titleArea {
 
 .myshopArea>.myshopMain>.menu li {
     margin: 10px 0 0 0;
+}
+
+.myshopArea .myshopMain .menu li a{
+    display: block;
+    color: #6d6d6d;
+    font-size: 14px;
+    text-decoration: none;
 }
 
 
@@ -72,7 +95,14 @@ div.section_titleArea {
     box-sizing: border-box;
 }
 
+
 /* 위시리스트 영역 */
+.myshopArea>.titleArea_mywish {
+    margin: 50px 0 20px;
+    text-align: left;
+
+}
+
 .myshopArea .myshop_wishlist>p.empty {
     border-top: 2px solid #1a1a1a;
     border-bottom: 1px solid #e6e6e6;
