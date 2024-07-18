@@ -56,7 +56,9 @@ button {
     cursor: pointer;
     background: none;
 }
-
+i{
+  font-style:normal;
+}
 
 .btnNormal {
   display: flex;
@@ -284,7 +286,31 @@ input[type="checkbox"]:checked {
 input[type="checkbox"] + label {
   margin-left:10px;
 }
-
+/**********************************count_btn *******************************/
+.count_btn {
+  display: flex;
+  align-items: center;
+}
+.increase {
+  border: 1px solid #e5e5e5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+}
+.increase_input {
+  border: 1px solid #e5e5e5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width:45px;
+  line-height: 38px;
+  box-sizing: border-box;
+  text-align:center;
+}
+/**********************************count_btn *******************************/
 /* ***************************tabMenu************************************************** */
 #container .section_menu ul{
   display:flex;
