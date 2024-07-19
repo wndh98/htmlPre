@@ -123,6 +123,7 @@
                     </div>
                 </form>
             </div>
+            <div style="height:2000px"></div>
         </div>
         <footer id="footer">
 
@@ -131,8 +132,6 @@
     <script>
         $(function () {
             $(window).on("scroll", function (e) {
-                console.log($(window).scrollTop());
-                console.log($(".cart_total_info").position());
                 if ($(window).scrollTop() > 650) {
                     $("#sticky").css("top", $(window).scrollTop() - $(".cart_total_info").position().top + 30 + "px")
                 }
