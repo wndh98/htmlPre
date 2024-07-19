@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="check_pw.css">
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="container">
+            <div id="contents">
+                <div class="breadcrumbs">
+                    <ul>
+                        <li><a href="#none">홈</a></li>
+                        <li><a href="#none"><strong>회원 정보 수정</strong></a></li>
+                    </ul>
+                </div>
+                <div class="section titleArea">
+                    <h2>회원 정보 수정</h2>
+                </div>
+                <Form action="updateForm.html" method="get">
+                    <div class="memberArea">
+                        <div class="ec-base-box typeMember">
+                            <h3 class="boxTitle">비밀번호 확인</h3>
+                            <div class="content">
+                                <fieldset>
+                                    <p class="info"><strong>rlawndh12</strong> 님의 회원정보를 안전하게 보호하기 위해<br>비밀번호를 한번 더 확인해
+                                        주세요.
+                                    </p>
+                                    <div class="password"><input type="password"></div>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="ec-base-button gBottom">
+                            <a href="#none" class="btn_black sizeM"
+                                onclick="EC$('#checkPasswdForm').submit();">확인</a>
+                        </div>
+                    </div>
+                </Form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

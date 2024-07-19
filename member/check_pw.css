@@ -1,0 +1,42 @@
+@media (min-width: 1025px) {
+    .titleArea {
+        margin: 45px 0 40px;
+        text-align: center;
+    }
+}
+
+@media (min-width: 1025px) {
+    .titleArea {
+        margin-top: 55px;
+    }
+}
+
+@media (min-width: 1024px) {
+    #contents>.section {
+        max-width: 1230px;
+        width: 92%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 1025px) {
+    .titleArea h2 {
+        display: inline-block;
+        color: #000;
+        color: var(--font-color-heading);
+        font-size: 30px;
+    }
+}
+
+.titleArea h2 {
+    word-break: keep-all;
+    word-wrap: break-word;
+    width: 100%;
+}
+
+.titleArea h2 {
+    font-weight: 700;
+    font-size: 30px;
+    color: #000;
+}

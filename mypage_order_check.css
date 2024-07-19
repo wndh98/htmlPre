@@ -14,7 +14,7 @@
 }
 
 @media (min-width: 1025px) {
-    .titleArea.titleArea--myshop {
+    .titleArea.titleArea_myorder {
         margin: 50px 0 20px;
         text-align: left;
     }
@@ -46,7 +46,7 @@
 }
 
 @media (min-width: 1025px) {
-    .titleArea.titleArea--myshop h2 {
+    .titleArea.titleArea_myorder h2 {
         color: #000;
         color: var(--font-color-heading);
         font-size: 16px;
@@ -54,15 +54,15 @@
     }
 }
 
-.myshopArea .titleArea--myshop h2 {
+.myshopArea .titleArea_myorder h2 {
     font-weight: 700;
 }
 
-@media (min-width: 1431px) {
-    .orderhistoryhead {
-        margin: 50px 0 60px;
-    }
+
+.orderhistoryhead {
+    margin: 50px 0 60px;
 }
+
 
 img,
 fieldset {
@@ -70,21 +70,21 @@ fieldset {
     vertical-align: top;
 }
 
-@media (min-width: 1431px) {
-    .orderhistoryhead fieldset {
-        display: flex;
-        padding: 30px 26px;
-        background: #f6f6f6;
-        border: 1px solid #e5e5e5;
-    }
+
+.orderhistoryhead fieldset {
+    display: flex;
+    padding: 30px 26px;
+    background: #f6f6f6;
+    border: 1px solid #e5e5e5;
 }
 
-@media (min-width: 1431px) {
-    .orderhistoryhead .state_select {
-        display: inline-block;
-        margin: 0 20px 0 0;
-    }
+
+
+.orderhistoryhead .state_select {
+    display: inline-block;
+    margin: 0 20px 0 0;
 }
+
 
 
 .orderhistoryhead .period {
@@ -93,11 +93,11 @@ fieldset {
     vertical-align: middle;
 }
 
-@media (min-width: 1431px) {
-    .orderhistoryhead .period {
-        margin: 0 15px 0 0;
-    }
+
+.orderhistoryhead .period {
+    margin: 0 15px 0 0;
 }
+
 
 [class^='btnNormal_w'],
 a[class^='btnNormal_w'] {
@@ -168,31 +168,24 @@ select {
 
 }
 
-@media (min-width: 1431px) {
-    .orderhistoryhead .fText {
-        width: 149px;
-    }
+
+.orderhistoryhead .fText {
+    width: 149px;
 }
 
-input[type=text][readonly] {
-    background: #f9f9f9;
-}
 
 button {
     border: 0;
     outline: none;
 }
 
-.orderhistoryhead .datepicker .ui-datepicker-trigger {
-    width: 20px;
-    height: 20px;
-    margin: 0 10px;
-    vertical-align: middle;
-    background-size: 20px 20px;
+.orderhistoryhead #history_start_date {
+    margin-right: 10px;
 }
 
 .orderhistoryhead #history_end_date {
     margin-left: 10px;
+    margin-right: 10px;
 }
 
 [class^='btnSubmit'],
@@ -258,4 +251,74 @@ select {
     height: 100%;
     display: block;
     opacity: 0.0001;
+}
+
+.myshopArea .myshop_orderlist .conbox {
+
+    border-top: 2px solid #1a1a1a;
+    overflow: hidden;
+}
+
+.myshopArea .myshop_orderlist .conbox2 {
+    position: relative;
+    border-bottom: 1px solid #ddd;
+    box-sizing: border-box;
+    background: #fff;
+}
+
+/* .myshopArea .myshop_orderlist {
+    width: 723px;
+    height: 173px;
+} */
+
+.myshopArea .myshop_orderlist .prdBox {
+    position: relative;
+    padding: 25px 0;
+    display: flex;
+    width: auto;
+    height: 120px;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.myshopArea .myshop_orderlist .prdBox .imagebox {
+    width: 120px;
+    height: auto;
+    border: 0;
+}
+
+
+
+.myshopArea .myshop_orderlist .prdBox .description {
+    line-height: 18px;
+    margin: 0 250px 0 0;
+    font-size: 25px;
+}
+
+.myshopArea .myshop_orderlist .prdBox .buttonArea {
+    position: absolute;
+    bottom: 25px;
+    right: 0;
+    width: 300px;
+    text-align: right;
+
+}
+
+.myshopArea .myshop_orderlist .prdBox .check {
+    display: inline-block;
+    margin: 0 10px 0 0;
+}
+
+.myshop_orderlist .description .paid {
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.myshop_orderlist .prdBox .delivery_state {
+    font-size: 20px;
+    position: absolute;
+    right: 0;
+}
+
+.footer_margin {
+    margin-top: 100px;
 }
