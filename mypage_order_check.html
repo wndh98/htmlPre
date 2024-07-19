@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="my.css">
+    <link rel="stylesheet" href="mypage_order_check.css">
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header"></header>
+        <aside id="aside"></aside>
+        <div id="container">
+            <div id="contents">
+                <div class="breadcrumbs">
+                    <ul>
+                        <li><a href="#none">홈</a></li>
+                        <li><a href="#none">마이쇼핑</a></li>
+                        <li><a href="#none"><strong>주문조회</strong></a></li>
+                    </ul>
+                </div>
+                <div class="myshopArea">
+                    <div class="titleArea titleArea--myshop">
+                        <h2>주문조회</h2>
+                    </div>
+                    <div class="section_menu">
+                        <ul>
+                            <li class="on"><a>주문내역조회 &#40;<span>1</span>&#41;</a></li>
+                            <li><a>취소/반품/교환 내역 &#40;<span>0</span>&#41;</a></li>
+                        </ul>
+                    </div>
+                    <form id="OrderHistoryForm" name="OrderHistoryForm">
+                        <div class="orderhistoryhead">
+                            <fieldset class="form">
+                                <div class="state_select">
+                                    <select>
+                                        <option>전체 주문처리상태</option>
+                                        <option>입금전</option>
+                                        <option>배송준비중</option>
+                                        <option>배송중</option>
+                                        <option>배송완료</option>
+                                        <option>취소</option>
+                                        <option>교환</option>
+                                        <option>반품</option>
+                                    </select>
+                                    <span class="period">
+                                        <a href="#" class="btnNormal_w sizeM ">오늘</button></a>
+                                        <a href="#" class="btnNormal_w sizeM selected">1개월</button></a>
+                                        <a href="#" class="btnNormal_w sizeM ">3개월</button></a>
+                                        <a href="#" class="btnNormal_w sizeM ">6개월</button></a>
+                                    </span>
+                                    <div class="date">
+                                        <span class="datepicker">
+                                            <input type="text" id="history_start_date" name="history_start_date"
+                                                class="fText hasDatepicker" readonly="readonly" size="10"
+                                                value="2024-06-18">
+                                            <button class="ui-datepicker-trigger">
+                                                <img src="/images/ico_cal.gif" alt="...">
+                                            </button>
+                                            &#126;
+                                            <input type="text" id="history_end_date" name="history_end_date"
+                                                class="fText hasDatepicker" readonly="readonly" size="10"
+                                                value="2024-07-18">
+                                            <button class="ui-datepicker-trigger">
+                                                <img src="/images/ico_cal.gif" alt="...">
+                                            </button>
+                                        </span>
+                                        <span class="btnSubmit sizeM">
+                                            조회
+                                            <input alt="조회" id="order_search_btn" type="image"
+                                                src="/images/btn_search.gif">
+                                        </span>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </form>
+                    <div class="order_list_box">
+                        <div class="order_list">
+                            <h3>주문내역</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer_margin"></div>
+        <footer id="footer"></footer>
+    </div>
+</body>
+
+</html>
