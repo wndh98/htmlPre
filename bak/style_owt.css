@@ -278,7 +278,10 @@ li {
 
 .ec-base-product .prdList .thumbnail {
     position: relative;
-    background-color: #fff;img {
+    background-color: #fff;
+}
+
+img {
     -webkit-perspective: 1;
 }
 

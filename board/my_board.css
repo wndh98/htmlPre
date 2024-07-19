@@ -1,0 +1,51 @@
+.myshopArea>.titleArea_myboard {
+    margin: 50px 0 20px;
+    text-align: left;
+
+}
+
+.myshopArea .titleArea_myboard>h2 {
+    font-weight: 700;
+    color: var(--font-color-heading);
+    font-size: 16px;
+}
+
+.myshopArea .boardpackage>p.empty {
+    border-bottom: 1px solid #e6e6e6;
+    font-size: 16px;
+    color: #9a9a9a;
+    padding: 64px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.myshopArea .boardpackage>p>svg {
+    margin-bottom: 16px;
+    display: block;
+}
+
+.boardpackage {
+    margin-bottom: 20px;
+}
+
+.myshopArea .boardpackage .sel_1 {
+    width: 150px;
+}
+
+.myshopArea .boardpackage .sel_2 {
+    width: 110px;
+}
+
+.board_search {
+    border: none;
+}
+
+.board_search #search {
+    margin: 0 5px;
+}
+
+.btnNormal_w {
+    display: inline-block;
+    border: 1px solid #D6D6D6;
+}
