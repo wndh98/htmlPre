@@ -251,7 +251,9 @@ select {
 }
 
 input[type="text"],
-input[type="password"] {
+input[type="password"],
+input[type="number"]
+{
   height: 40px;
   line-height: 40px;
   padding: 2px 4px 2px 15px;
