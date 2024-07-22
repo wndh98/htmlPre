@@ -40,3 +40,146 @@
     font-size: 30px;
     color: #000;
 }
+
+.ec-base-box {
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 5px solid #e5e5e5;
+}
+
+.ec-base-box.typeMember {
+    border-width: 1px;
+    border-color: #e5e5e5;
+}
+
+@media (min-width: 1025px) {
+    .ec-base-box.typeMember {
+        padding: 74px 0;
+    }
+}
+
+.ec-base-box.typeMember h3.boxTitle {
+    margin: 0 0 20px;
+    font-size: 16px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.ec-base-box.typeMember .content {
+    margin: 0 auto;
+    text-align: center;
+}
+
+@media (min-width: 1025px) {
+    .ec-base-box.typeMember .content {
+        width: 421px;
+    }
+}
+
+img,
+fieldset {
+    border: none;
+    vertical-align: top;
+}
+
+.memberArea .info {
+    margin: 0 0 20px;
+}
+
+.ec-base-box.typeMember .info {
+    font-size: 13px;
+    line-height: 20px;
+    color: #6d6d6d;
+}
+
+strong {
+    font-weight: bold;
+}
+
+.memberArea .password input {
+    width: 100%;
+    max-width: 293px;
+}
+
+.ec-base-button {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.ec-base-button.gBottom {
+    margin: 50px 0 0;
+}
+
+.ec-base-button.gBottom {
+    margin: 12px 0 0 0;
+}
+
+[class^='btn'],
+a[class^='btn'] {
+    display: inline-block;
+    padding: 12px 20px;
+    height: 40px;
+    font-size: 13px;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    line-height: 1;
+    font-weight: bold;
+    text-decoration: none;
+    vertical-align: middle;
+    word-spacing: -0.5px;
+    letter-spacing: 0;
+    text-align: center;
+    white-space: nowrap;
+    color: #fff;
+    background-color: #000;
+}
+
+[class^='btn'],
+a[class^='btn'] {
+    background: #1a1a1a;
+    color: #fff;
+}
+
+@media (min-width: 1025px) {
+    [class^='btn'].sizeM {
+        padding: 13px 22px;
+        height: 40px;
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 1025px) {
+    [class^='btn'][class*='Fix'] {
+        min-width: 72px;
+        word-break: keep-all;
+        word-wrap: break-word;
+    }
+}
+
+@media (min-width: 1025px) {
+    [class^='btn'][class*='Fix'] {
+        min-width: 72px;
+        word-break: keep-all;
+        word-wrap: break-word;
+    }
+}
+
+@media (min-width: 1025px) {
+    [class^='btn'][class*='Fix'].sizeM {
+        min-width: 135px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+.ec-base-button [class^='btn'].sizeM {
+    height: 50px;
+    padding: 0;
+    line-height: 50px;
+    font-size: 14px;
+}
+
+.footer_margin {
+    margin-top: 100px;
+}
