@@ -592,7 +592,7 @@ input[type="file"]::file-selector-button,input[type="file"]::-webkit-file-upload
   justify-content: center;
   margin-top:30px;
 }
-.btn_menu button,a{
+.btn_menu button,.btn_menu a{
   width:150px;
 }
 /*****************************************board*****************************************/
