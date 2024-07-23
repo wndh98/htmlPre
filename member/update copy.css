@@ -1,0 +1,63 @@
+.titleArea {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.titleArea h2 {
+    font-size: 30px;
+}
+
+
+.memberTitle {
+    width: 900px;
+    margin: 0 auto 0;
+}
+
+.memberTitle h3 {
+    font-size: 16px;
+}
+
+.memberTitle .required {
+    display: block;
+    margin: -13px 0 0;
+    line-height: 1;
+    text-align: right;
+    color: var(--font-color-base);
+}
+
+.memberTitle .required {
+    font-size: 14px;
+    color: #1a1a1a;
+    margin: -19px 0 0 0;
+}
+
+.memberTable {
+    border-top: 2px solid #1a1a1a;
+    margin: 20px auto 0;
+    width: 900px;
+}
+
+table {
+    width: 100%;
+    border: 0;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.memberTable th {
+    border-bottom: 1px solid #e5e5e5;
+    background-color: #f6f6f6;
+}
+
+.memberTable td {
+    padding: 10px 20px;
+}
+
+.memberTable td input {
+    display: block;
+}
+
+.memberTable td .inline_block {
+    display: inline-block;
+}
