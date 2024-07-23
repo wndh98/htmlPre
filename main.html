@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="/main.css">
     <link rel="stylesheet" href="/footer.css">
@@ -202,53 +203,6 @@
                                     <button type="button" class="icoCategory">"펼침"
 
                                     </button>
-                                    <script>
-
-
-
-                                        const button = document.getElementsByClassName("title")[0];
-
-                                        button.addEventListener("click", function () {
-                                            document.getElementsByClassName("categoryList")[0].classList.toggle("on");
-
-                                        });
-
-                                        const button2 = document.getElementsByClassName("service_center_var")[0];
-
-                                        button2.addEventListener("click", function () {
-                                            document.getElementsByClassName("service_center_board")[0].classList.toggle("on");
-
-                                        });
-
-                                        const button3 = document.getElementsByClassName("icoClose")[0];
-
-                                        button3.addEventListener("click", function () {
-                                            const button4 = document.getElementsByClassName("top_banner_box")[0].classList.toggle("on");
-
-                                        });
-
-
-                                        const button5 = document.getElementById("trigger");
-
-                                        button5.addEventListener("click", function () {
-                                            const top2 = document.getElementsByClassName("menuBox_on")[0].classList.toggle("off");
-                                            button5.classList.toggle("off");
-                                        });
-                                        let lastScroll = 0;
-                                        window.addEventListener('scroll', function () {
-                                            const layoutElement = document.getElementsByClassName("layout")[0];
-                                            let currentScroll = window.scrollY;
-                                            if (layoutElement) {
-                                                if (currentScroll > lastScroll) {
-                                                    layoutElement.classList.add("fixed");
-                                                } else {
-                                                    layoutElement.classList.remove("fixed");
-                                                }
-                                            }
-                                            lastScroll = currentScroll;
-                                        });
-
-                                    </script>
                                 </div>
 
                                 <ul class="categoryList">

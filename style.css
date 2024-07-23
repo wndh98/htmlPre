@@ -250,7 +250,9 @@ select {
 }
 
 input[type="text"],
-input[type="password"] {
+input[type="password"],
+input[type="number"]
+{
   height: 40px;
   line-height: 40px;
   padding: 2px 4px 2px 15px;
@@ -642,10 +644,8 @@ colgroup {
   justify-content: center;
   margin-top: 30px;
 }
-
-.btn_menu button,
-a {
-  width: 150px;
+.btn_menu button,.btn_menu a{
+  width:150px;
 }
 
 /*****************************************board*****************************************/
