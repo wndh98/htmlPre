@@ -92,7 +92,7 @@
     height: 40px;
     border: 1px solid #D6D6D6;
     line-height: 1;
-    display: inline-block;
+
     box-sizing: border-box;
 }
 
@@ -152,7 +152,7 @@
     display: flex;
     width: auto;
     height: 120px;
-    border-bottom:1px solid #e1e1e1;
+    border-bottom: 1px solid #e1e1e1;
 }
 
 .myshopArea .myshop_wishlist .prdBox .imagebox {
@@ -194,7 +194,7 @@
 .myshopArea .delete_order {
 
     margin: 12px 0 0 0;
-   
+
 }
 
 .conbox2 .btnDelete {
@@ -384,4 +384,511 @@ a[class^='btnNormal'] {
 .myshopArea .myshop_wishlist .prdBox>span {
     display: inline-block;
     margin: 0 10px 0 0;
+}
+
+
+/* 사이드 바 */
+
+
+
+
+@media (max-width: 1024px) {
+    #popupbox .popup .side {
+        position: relative;
+        top: auto;
+        left: auto;
+        width: 100%;
+        border: 0;
+        transform: initial;
+    }
+}
+
+#popupbox .popup .side {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 100%;
+    border: 0;
+    transform: initial;
+}
+
+
+#popupbox .popup .side .header1 {
+    padding: 74px 16px 10px;
+    margin: 0;
+    border: 0;
+}
+
+#popupbox .popup .side .header1 .h2 {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+#popupbox .popup .side .content1 {
+    position: relative;
+    padding: 0;
+    flex: 1;
+    overflow: auto;
+    height: 100%;
+    font-size: 13px;
+    line-height: 22px;
+    min-height: 90px;
+    box-sizing: border-box;
+}
+
+#popupbox .popup .side .content1 .productdetali .imagearea {
+    position: relative;
+    display: flex;
+    margin: 30px 16px;
+    min-height: 82px;
+}
+
+#popupbox .popup .side .content1 .productdetali .imagearea .productimage {
+    width: 76px;
+}
+
+#popupbox .popup .side .content1 .productdetali .imagearea .productimage .img {
+    max-width: 100%;
+}
+
+#popupbox .popup .side .content1 .productdetali .imagearea .name {
+    margin: 0 0 0 12px;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+
+#popupbox .popup .side .content1 .productdetali .optiontable {
+    margin: 0 16px;
+    width: calc(100% - 32px);
+    color: #353535;
+    clear: both;
+    text-align: left;
+}
+
+#popupbox .popup .side .content1 .productdetali .optiontable .option1 th {
+    padding-bottom: 10px;
+}
+
+#totalProducts {
+    margin: 15px 0 0;
+}
+
+#totalProducts table {
+    width: 100%;
+    margin: 0;
+    font-size: 12px;
+}
+
+#totalPrice {
+    display: flex;
+    justify-content: space-between;
+    padding: 27px 16px 26px;
+    font-size: 15px;
+    border-top: 1px solid #e5e5e5;
+    vertical-align: middle;
+    background: #fff;
+}
+
+#totalPrice .title {
+    font-weight: normal;
+}
+
+#totalPrice .total {
+    color: #7d7d7d;
+    font-size: 13px;
+}
+
+/* 하단버튼 */
+#popupbox .popup .side .btnClose {
+    top: 5px;
+    width: 24px;
+    height: 24px;
+    padding: 20px 17px;
+}
+
+.side .btnClose {
+    position: absolute;
+    right: 7px;
+    top: 7px;
+    padding: 10px;
+    cursor: pointer;
+    display: block;
+    overflow: hidden;
+    width: 20px;
+    height: 20px;
+    font-size: 1px;
+    line-height: 0;
+    color: transparent;
+    white-space: nowrap;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+
+}
+
+.side .btnClose:before {
+    right: 12px;
+    height: 25px;
+}
+
+.side .btnClose:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 10px;
+    width: 1px;
+    height: 21px;
+    margin: 10px 10px 0 0;
+    background: #000;
+    -webkit-transition: .3s ease-out;
+    transition: .3s ease-out;
+}
+
+.side .btnClose:after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: 21px;
+    height: 1px;
+    margin: 10px 10px 0 0;
+    background: #000;
+    -webkit-transition: .3s ease-out;
+    transition: .3s ease-out;
+    top: 12px;
+    width: 25px;
+}
+
+.side .ec-base-button[class*="gColumn"] {
+    margin: 25px 16px;
+    display: flex;
+}
+
+.xans-product-optionselectlayer .ec-base-button[class*="gColumn"] {
+    flex-wrap: wrap;
+}
+
+.side[class*="gColumn"] [class^='btn'] {
+    margin: 0 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    word-break: keep-all;
+    word-wrap: break-word;
+    white-space: normal;
+    -webkit-flex: 1;
+    -moz-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+}
+
+@media (max-width: 1024px) {
+    [class^='btn'].sizeM {
+        height: 36px;
+        line-height: 12px;
+    }
+}
+
+#popupbox>div>div>div.xans-element-.xans-product.xans-product-action.ec-base-button.gColumn>a.btnNormal.sizeM {
+    display: inline-block;
+    padding: 12px 20px;
+    height: 40px;
+    font-size: 13px;
+    box-sizing: border-box;
+    border: 1px solid #bcbcbc;
+    line-height: 1;
+    font-weight: normal;
+    text-decoration: none;
+    vertical-align: middle;
+    word-spacing: -0.5px;
+    letter-spacing: 0;
+    text-align: center;
+    white-space: nowrap;
+    color: #000;
+    background-color: #fff;
+}
+
+@media (max-width: 1024px) {
+    .ec-base-button [class^='btn']+[class^='btn'] {
+        margin-left: 6px;
+    }
+}
+
+.ec-base-button[class*="gColumn"] [class^='btn'] {
+    margin: 0 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    word-break: keep-all;
+    word-wrap: break-word;
+    white-space: normal;
+    -webkit-flex: 1;
+    -moz-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+}
+
+@media (max-width: 1024px) {
+    [class^='btn'].sizeM {
+        height: 36px;
+        line-height: 12px;
+    }
+}
+
+[class^='btnSubmit'],
+a[class^='btnSubmit'] {
+    display: inline-block;
+    padding: 12px 20px;
+    height: 40px;
+    font-size: 13px;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    line-height: 1;
+    font-weight: bold;
+    text-decoration: none;
+    vertical-align: middle;
+    word-spacing: -0.5px;
+    letter-spacing: 0;
+    text-align: center;
+    white-space: nowrap;
+    color: #fff;
+    background-color: #000;
+}
+
+#popupbox .popup .side .btnClose {
+    top: 5px;
+}
+
+.side .btnClose {
+    top: 5px;
+    width: 24px;
+    height: 24px;
+    padding: 20px 17px;
+}
+
+#popupbox .popup .side .btnClose {
+    position: absolute;
+    right: 7px;
+    top: 7px;
+    padding: 10px;
+    cursor: pointer;
+    display: block;
+    overflow: hidden;
+    width: 20px;
+    height: 20px;
+    font-size: 1px;
+    line-height: 0;
+    color: transparent;
+    white-space: nowrap;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+@media (max-width: 1024px) {
+    #popupbox .popup .side {
+        position: relative;
+        top: auto;
+        left: auto;
+        width: 100%;
+        border: 0;
+        transform: initial;
+    }
+}
+
+
+
+#popupbox {
+    display: none;
+    top: 0px;
+    z-index: 10001;
+    width: 1903px;
+    height: 1426.78px;
+    width: 458px !important;
+    height: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background-color: #fff;
+}
+
+#popupbox.in {
+    display: block;
+
+    top: 0px;
+    z-index: 10000;
+    width: 1903px;
+    height: 1426.78px;
+    width: 458px !important;
+    height: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background-color: #fff;
+}
+
+
+#dark {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1000;
+    width: 100%;
+    height: 1414.78px;
+    opacity: 0.4;
+    background-color: #000;
+}
+
+/* #popupbox .popup {
+    min-width: 0;
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    padding: 0 0 30px;
+} */
+
+.close {
+
+    display: none;
+}
+
+#popupbox .popup {
+    min-width: 0;
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    padding: 0 0 30px;
+}
+
+#popupbox>div>div>div.content1>div>table>tbody>tr>td>ul>li>a>span {
+    display: inline-block;
+    padding: 9px 5px;
+    line-height: 32px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#popupbox>div>div>div.content1>div>table>tbody>tr>td>p>span {
+    display: inline-block;
+    padding: 9px 5px;
+    line-height: 32px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#popupbox>div>div>div.content1>div>table>tbody.option2>tr>td>ul>li>a {
+    display: block;
+    min-width: 50px;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    word-break: break-all;
+}
+
+#popupbox>div>div>div.content1>div>table>tbody.option1>tr>td>ul>li>a>span {
+    display: inline-block;
+    padding: 9px 5px;
+    line-height: 32px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+
+#popupbox>div>div>div.content1>div>table>tbody>tr>td {
+    padding-bottom: 10px;
+}
+
+#totalProducts table {
+    width: 100%;
+    margin: 0;
+    font-size: 12px;
+}
+
+#totalProducts tbody td {
+    padding: 30px 0;
+    line-height: 18px;
+    vertical-align: middle;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+#totalPrice {
+    display: flex;
+    justify-content: space-between;
+    padding: 27px 16px 26px;
+    font-size: 15px;
+    border-top: 1px solid #e5e5e5;
+    vertical-align: middle;
+    background: #fff;
+}
+
+#popupbox>div>div>div.content1>div>table {
+    margin: 0 16px;
+    width: calc(100% - 32px);
+    color: #353535;
+    clear: both;
+    text-align: left;
+}
+
+#popupbox>div>div>div.content1>div>table>tbody>tr>td>ul>li {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    margin: 0 5px 3px 0;
+    vertical-align: top;
+    border: 1px solid #d7d7d7;
+    background: #fff;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+
+}
+
+#popupbox>div>div>div.content1>div>table>tbody>tr>td>ul>li>a {
+
+    min-width: 50px;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    word-break: break-all;
+}
+
+
+#totalProducts>table>tbody>tr>td {
+    padding-left: 16px;
+    padding-right: 10px;
+}
+
+#totalProducts .quantity {
+    display: inline-block;
+    position: relative;
+    width: 103px !important;
+    padding: 0 30px;
+    vertical-align: top;
+    box-sizing: border-box;
 }
