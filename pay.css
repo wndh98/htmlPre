@@ -1,26 +1,30 @@
-#container{
-    padding-top:0px;
+#container {
+    padding-top: 0px;
 }
 
-.section_menu li{
-    width:50% !important;
+.section_menu li {
+    width: 50% !important;
     background: #f8f9fa;
 }
-.section_menu li a{
-    width:100%;
-    display:flex;
+
+.section_menu li a {
+    width: 100%;
+    display: flex;
     justify-content: center;
     align-items: center;
     font-weight: 600;
     color: #000;
 }
-.section_menu .on{
+
+.section_menu .on {
     background-color: #fff;
 }
-.orderBox{
+
+.orderBox {
     padding-top: 10px;
 }
-.orderBox .orderTitle{
+
+.orderBox .orderTitle {
     position: relative;
     padding: 20px 16px;
     font-size: 18px;
@@ -30,41 +34,48 @@
     font-weight: 500;
 
 }
-.deliveryInfo{
+
+.deliveryInfo {
     background-color: #fff;
     padding: 0 16px 20px;
     padding-top: 22px;
-    position:relative;
+    position: relative;
 }
-.deliveryInfo strong{
+
+.deliveryInfo strong {
     display: block;
     padding: 0 76px 0 0;
     color: #333;
     font-size: 16px;
     font-weight: 500;
 }
-.deliveryInfo p{
+
+.deliveryInfo p {
     font-size: 15px;
     color: #383838;
     margin-top: 18px;
 }
-.deliveryInfo .deliList{
-    position:absolute;
-    top:10px;
-    right:10px;
+
+.deliveryInfo .deliList {
+    position: absolute;
+    top: 10px;
+    right: 10px;
     height: 42px;
     padding: 0 10px;
     font-size: 14px;
     font-weight: 400;
 }
-.memoBox{
+
+.memoBox {
     background-color: #fff;
     border-top: 1px solid #EBEBEB;
     padding: 20px 16px 15px;
 }
-.memoBox select{
+
+.memoBox select {
     width: 100%;
 }
+
 body,
 code {
     margin: 0 auto;
@@ -272,6 +283,11 @@ body {
 
 #conbox.typeHeader {
     padding-top: 122px;
+}
+
+#conbox .deliveryInfoTable img {
+    width: 6px;
+    height: 6px;
 }
 
 #conbox #productdetail {
@@ -550,4 +566,58 @@ table {
     border: 0;
     border-spacing: 0;
     border-collapse: collapse;
+}
+
+#orderProduct .contents .imagebox,
+#orderProduct .contents .description {
+    display: inline-block;
+}
+
+#orderProduct .contents .imagebox {
+    vertical-align: top;
+    margin: 10px 20px;
+}
+
+#orderProduct .contents .imagebox img {
+    width: 90px;
+    height: 90px;
+}
+
+.totalPrice .title {
+    background-color: #F8F9FA;
+}
+
+.segment {
+    padding: 0 16px 20px;
+}
+
+.segment table tbody th {
+    text-align: left;
+}
+
+.segment table tbody td {
+    text-align: right;
+}
+
+.totalPay {
+    background-color: #F4F7FF;
+    position: relative;
+    line-height: 1.4em;
+}
+
+.totalPay h3 {
+    display: inline-block;
+    vertical-align: auto;
+}
+
+.totalPay h4 {
+    display: inline-block;
+    position: absolute;
+    right: 16px;
+}
+
+.agreeArea .allAgree,
+.agreeArea .agreement {
+    padding: 20px 0px 16px;
+    margin: 0 16px;
 }

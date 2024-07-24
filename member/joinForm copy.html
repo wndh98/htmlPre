@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylehseet" href="/font/monstserrat.css">
+    <link rel="stylehseet" href="/font/nanum_gothic.css">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/footer.css">
+    <link rel="stylesheet" href="/footer_tab.css">
+    <link rel="stylesheet" href="/member/member.css">
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header"></header>
+        <aside id="aside"></aside>
+        <div id="container">
+            <div class="breadcrumbs">
+                <ul>
+                    <li><a href="#none">홈</a></li>
+                    <li><a href="#none">회원가입</a></li>
+                </ul>
+            </div>
+            <div class="middle_container">
+                <form>
+                    <div class="memberForm">
+                        <div class="memberTitle">
+                            <h3>회원인증</h3>
+                        </div>
+                        <table class="memberTable">
+                            <colgroup>
+                                <col style="width:190px;">
+                                <col style="width:auto;">
+                            </colgroup>
+                            <tr>
+                                <th><img src="/images/ico_required.svg"> 회원구분</th>
+                                <td>
+                                    <input type="radio" name="radio1" value="1" checked>
+                                    <label>개인회원</label>
+                                    <input type="radio" name="radio1" value="2">
+                                    <label>사업자회원회원</label>
+                                </td>
+                            </tr>
+                            <tr class="type2 type3">
+                                <th><img src="/images/ico_required.svg"> 사업자구분</th>
+                                <td>
+                                    <input type="radio" name="radio2" value="2" checked>
+                                    <label>개인사업자</label>
+                                    <input type="radio" name="radio2" value="3">
+                                    <label>법인사업자</label>
+                                </td>
+                            </tr>
+                            <tr class="type3">
+                                <th><img src="/images/ico_required.svg"> 회원인증</th>
+                                <td>
+                                    법인명<br>
+                                    <input type="text" style="margin-top:5px;"><br>
+                                    법인번호<br>
+                                    <input type="text" style="margin-top:5px;width:30%"> -
+                                    <input type="text" style="margin-top:5px;width:30%">
+                                    <button class="btn_white search_btn">중복확인</button>
+
+                                </td>
+                            </tr>
+                        </table>
+                        <div class="memberTitle">
+                            <h3>기본정보</h3>
+                        </div>
+                        <table class="memberTable">
+                            <colgroup>
+                                <col style="width:190px;">
+                                <col style="width:auto;">
+                            </colgroup>
+                            <tr class="type2">
+                                <th><img src="/images/ico_required.svg"> 상호명</th>
+                                <td>
+                                    <input type="text">
+                                </td>
+                            </tr>
+                            <tr class="type2 type3">
+                                <th><img src="/images/ico_required.svg"> 사업자번호</th>
+                                <td>
+                                    <input type="text">
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(function () {
+            let radio1 = $("input[name=radio1]");
+            let radio2 = $("input[name=radio2]");
+            radio1.on("change", function () {
+                if ($(this).val() == 1) {
+                    $(".type1").css("display", "table-row");
+                    $(".type3").css("display", "none");
+                    $(".type2").css("display", "none");
+                    $(radio2[0]).prop("checked", true);
+                } else {
+                    $(".type1").css("display", "table-row");
+                    $(".type3").css("display", "none");
+                    $(".type2").css("display", "table-row");
+                }
+            });
+            radio2.on("change", function () {
+                if ($(this).val() == 2) {
+                    $(".type1").css("display", "table-row");
+                    $(".type3").css("display", "none");
+                    $(".type2").css("display", "table-row");
+                } else {
+                    $(".type1").css("display", "none");
+                    $(".type2").css("display", "none");
+                    $(".type3").css("display", "table-row");
+                }
+            });
+        })
+
+
+    </script>
+    <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+    <script src="/script/daumMap.js"></script>
+</body>
+
+</html>
